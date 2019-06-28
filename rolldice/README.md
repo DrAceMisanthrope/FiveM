@@ -11,7 +11,7 @@
 3. Add `start 3dme` & `start rolldice` in the `server.cfg`
 4. Enjoy!
 
-*Already using 3dme? Easy, just install rolldice!*
+*Already using 3dme? Easy, just install rolldice! Using an alternative to 3dme? In `client.lua`, look for `TriggerServerEvent("3dme:shareDisplay", text)` and change that line to call the display function of your 3D display script.*
 
 ## Usage
 * `/roll numOfDice numOfSides`
