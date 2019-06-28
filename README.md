@@ -6,7 +6,7 @@ FiveM Scripts and Mods, developed by Dr. Ace Misanthrope and Pacific Gaming Leag
 * [To Do List](https://github.com/PacificGL/FiveM) - Coming Soon
 
 ## Credits
-* Main Author \- [Dr. Ace Misanthrope](https://github.com/FlyingAce015)
+* [Dr. Ace Misanthrope](https://github.com/FlyingAce015) - Main Author
 
 ## License
     PacificGL FiveM GitHub Repository
