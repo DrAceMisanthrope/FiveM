@@ -3,7 +3,7 @@
 
 
 ## Installation
-1. Place `rolldice/` folder in the server's `resources/` folder
+1. Place `rolldice` folder in the server's `resources` folder
 2. Add `start rolldice` in the `server.cfg`
 3. Enjoy!
 
@@ -16,8 +16,8 @@
 *Providing an invalid argument won't break anything, it will just use the defaults where needed.*
 
 ## Credits
-* [Dr. Ace Misanthrope](https://github.com/FlyingAce015) - Main Author
-* [Alphie](https://www.twitch.tv/alphietv) - RollTheDice using 3dme (3 dice with 6 sides)
+* [Dr. Ace Misanthrope](https://github.com/FlyingAce015) - Author
+* [Alphie](https://www.twitch.tv/alphietv) - RollTheDice using 3dme (3 dice, 6 sides)
 * [Elio / Sheamle](https://github.com/Sheamle/3dme) - 3dme; 3D display of `/me` command
 
 ## License
