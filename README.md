@@ -2,7 +2,7 @@
 FiveM Scripts and Mods, developed by Dr. Ace Misanthrope and Pacific Gaming League. All code is free to use and alter, however if large chunks are being used in another project, please provide credit where appropriate, as per the GNU GPL-3.0. Thank you and enjoy!
 
 ## Contents
-* [RollDice](https://github.com/PacificGL/FiveM) - Roll x Dice with y Sides (Simple script for FiveM)
+* [RollDice](https://github.com/PacificGL/FiveM/tree/master/rolldice) - Roll x Dice with y Sides (Simple script for FiveM)
 * [To Do List](https://github.com/PacificGL/FiveM) - Coming Soon
 
 ## Credits
