@@ -2,10 +2,16 @@
 **A simple FiveM script for rolling dice.** Based on Alphie's RollTheDice, this was expanded to roll a single 6 sided dice by default, with the ability to define the number of dice and the sides on each dice. This supports 1-6 dice, with 2-100 sides on each, with these maximums available for edit in `client.lua`.
 
 
+## Dependencies
+* [3dme](https://github.com/Sheamle/3dme) - 3D Display `/me` commands
+
 ## Installation
-1. Place `rolldice` folder in the server's `resources` folder
-2. Add `start rolldice` in the `server.cfg`
-3. Enjoy!
+1. Download [3dme](https://github.com/Sheamle/3dme) & rolldice
+2. Place `3dme` & `rolldice` folders in the server `resources` folder
+3. Add `start 3dme` & `start rolldice` in the `server.cfg`
+4. Enjoy!
+
+*Already using 3dme? Easy, just install rolldice!*
 
 ## Usage
 * `/roll numOfDice numOfSides`
