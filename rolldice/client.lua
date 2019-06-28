@@ -1,6 +1,6 @@
 --[[
 	Roll Dice!
-	Version: 0.2.0
+	Version: 0.2.1
 	Author: Dr. Ace Misanthrope (https://github.com/PacificGL)
 	License: GPLv3
 	Description: FiveM Script - Roll x Dice with y Sides (Default 1 Dice and 6 Sides)
@@ -11,12 +11,16 @@
 		- 3dme (https://forum.fivem.net/t/release-me-but-the-text-is-3d-printed/149691)
 --]]
 
+maxDice = 6
+maxSides = 100
+
+TriggerEvent('chat:addSuggestion', '/roll', 'Roll dice', {
+    { name="Dice", help="Number of dice (1-" ..maxDice ..")" },
+    { name="Sides", help="Number of sides (2-" ..maxSides ..")" },
+})
+
 RegisterCommand("roll", function(source, args, command)
-	-- Editable
 	local text = "Rolled: "
-	local maxDice = 6
-	local maxSides = 100
-	-- NOT Editable
 	local player = PlayerPedId(-1)
 	local anim1 = "mp_player_int_wank_01_enter"
 	local anim2 = "mp_player_int_wank_01_exit"
@@ -34,7 +38,6 @@ RegisterCommand("roll", function(source, args, command)
 	for i = 1, #dice do
 		text = text ..dice[i] .."/" ..numOfSides .."  "
 	end
-	-- Roll The Dice
 	RequestAnimDict("mp_player_int_upperwank")
 	TaskPlayAnim(player, "mp_player_int_upperwank", anim1, 8.0, -8, -1, 8, 0, 0, 0, 0)
 	Wait(650)
