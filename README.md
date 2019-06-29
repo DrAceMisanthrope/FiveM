@@ -5,9 +5,6 @@ FiveM Scripts and Mods, developed by Dr. Ace Misanthrope and Pacific Gaming Leag
 * [pgl_play](https://github.com/PacificGL/FiveM/tree/master/pgl_play) - Roll Dice / Flip Coin / Rock, Paper, Scissors / etc. *(Stable)*
 * [rolldice](https://github.com/PacificGL/FiveM/tree/master/rolldice) - Roll x Dice with y Sides *(Stable) - Use pgl_play instead!*
 
-## Credits
-* [Dr. Ace Misanthrope](https://github.com/FlyingAce015) - Main Author
-
 ## License
     PacificGL FiveM GitHub Repository
     Copyright (C) 2019 Pacific Gaming League.
