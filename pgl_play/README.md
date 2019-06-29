@@ -27,6 +27,7 @@ There will be improvements and more commands with each new version.
 
 ## Credits
 * [Dr. Ace Misanthrope](https://github.com/FlyingAce015) - Author
+* [Alphie](https://www.twitch.tv/alphietv) - RollTheDice using 3dme (3 dice, 6 sides)
 * [Elio / Sheamle](https://github.com/Sheamle/3dme) - 3dme; 3D display of `/me` command
 
 ## License
@@ -48,4 +49,4 @@ https://github.com/PacificGL/FiveM/blob/master/LICENSE
 *Version number can be found in `__resource.lua`*
 
 **0.0.3 Stable**
-* Inital Release to GitHub
+* Initial Release to GitHub
