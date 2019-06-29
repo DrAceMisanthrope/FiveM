@@ -3,7 +3,6 @@ maxDice = 6
 maxDiceSides = 100
 
 RegisterCommand("roll", function(source, args, command)
-
 	local text = "Rolled: "
 	local animDict = "mp_player_int_upperwank"
 	local dice = {}
