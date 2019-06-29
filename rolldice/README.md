@@ -1,6 +1,7 @@
 # RollDice
 **A simple FiveM script for rolling dice.** Based on Alphie's RollTheDice, this was expanded to roll a single 6 sided dice by default, with the ability to define the number of dice and the sides on each dice. This supports 1-6 dice, with 2-100 sides on each, with these maximums available for edit in `client.lua`.
 
+**Want more functionality? Use [pgl_play](https://github.com/PacificGL/FiveM/tree/master/pgl_play) instead!**
 
 ## Dependencies
 * [3dme](https://github.com/Sheamle/3dme) - 3D Display `/me` commands
