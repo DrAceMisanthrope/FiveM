@@ -6,14 +6,14 @@
 * [3dme](https://github.com/Sheamle/3dme) - 3D Display `/me` commands
 
 ## Installation
-*This replaces my [rolldice](https://github.com/PacificGL/FiveM/tree/master/rolldice) script. If you use that one, first remove its folder in resources and start line from your server.cfg.*
-
-1. Download [3dme](https://github.com/Sheamle/3dme) & pgl_play
+1. Download **[3dme](https://github.com/Sheamle/3dme)** & **pgl_play**
 2. Place `3dme` & `pgl_play` folders in the server `resources` folder
 3. Add `start 3dme` & `start pgl_play` in the `server.cfg`
 4. Enjoy!
 
-*Already using 3dme? Easy, just install pgl_play! Using an alternative to 3dme? In `client.lua`, look for `TriggerServerEvent("3dme:shareDisplay", text)` and change that line to call the display function of your 3D display script.*
+*Already using 3dme? Easy, just install pgl_play!*
+
+*Using an alternative to 3dme? In `client.lua`, look for `TriggerServerEvent("3dme:shareDisplay", text)` and change that line to call the display function of your 3D display script.*
 
 ## Usage
 Each command contains a usage suggestion as you begin to type it, so typing `/roll` will show `/roll [Dice] [Sides]` with tooltips on each argument. Providing an invalid argument won't break anything, it will just use the defaults where needed.
@@ -48,5 +48,8 @@ https://github.com/PacificGL/FiveM/blob/master/LICENSE
 ## Version History
 *Version number can be found in `__resource.lua`*
 
-**0.0.3 Stable**
+**0.0.4 Stable**
+* Improved roll animation, thanks to AlphieTV
+
+**0.0.3**
 * Initial Release to GitHub

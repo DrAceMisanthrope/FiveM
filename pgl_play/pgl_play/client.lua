@@ -1,11 +1,21 @@
 -- Animations
-animDict = "mp_player_int_upperwank"
+animDict1 = "mp_player_int_upperwank"
+animDict2 = "anim@mp_player_intcelebrationmale@wank"
 anim1 = "mp_player_int_wank_01_enter"
 anim2 = "mp_player_int_wank_01_exit"
+anim3 = "wank"
 
 -- Display 3D Text with 3dme
 function DisplayText(text)
 	TriggerServerEvent("3dme:shareDisplay", text) -- Edit if using a 3dme alternative
+end
+
+-- Get Animations
+function loadAnimDict(dict)
+	while not HasAnimDictLoaded(dict) do
+		RequestAnimDict(dict)
+		Citizen.Wait(5)
+	end
 end
 
 -- Rock, Paper, Scissors
@@ -23,8 +33,8 @@ RegisterCommand("rps", function(source, args, command)
 		return
 	end
 	text = text ..choice
-	RequestAnimDict(animDict)
-	TaskPlayAnim(PlayerPedId(-1), animDict, anim1, 8.0, -8, -1, 8, 0, 0, 0, 0)
+	loadAnimDict(animDict1)
+	TaskPlayAnim(PlayerPedId(-1), animDict1, anim1, 8.0, -8, -1, 8, 0, 0, 0, 0)
 	Citizen.Wait(700)
 	DisplayText(text)
 end)
@@ -37,8 +47,8 @@ RegisterCommand("flip", function(source, args, command)
 	local text = flipPrefix
 	local options = {"Heads", "Tails"}
 	text = text ..options[math.random(1, #options)]
-	RequestAnimDict(animDict)
-	TaskPlayAnim(PlayerPedId(-1), animDict, anim2, 8.0, -8, -1, 8, 0, 0, 0, 0)
+	loadAnimDict(animDict1)
+	TaskPlayAnim(PlayerPedId(-1), animDict1, anim2, 8.0, -8, -1, 8, 0, 0, 0, 0)
 	Citizen.Wait(700)
 	DisplayText(text)
 end)
@@ -56,11 +66,10 @@ RegisterCommand("roll", function(source, args, command)
 		dice[i] = math.random(1, numOfSides)
 		text = text ..dice[i] .."/" ..numOfSides .."  "
 	end
-	RequestAnimDict(animDict)
-	TaskPlayAnim(PlayerPedId(-1), animDict, anim1, 8.0, -8, -1, 8, 0, 0, 0, 0)
-	Wait(650)
-	TaskPlayAnim(PlayerPedId(-1), animDict, anim2, 8.0, -8, -1, 8, 0, 0, 0, 0)
-	Citizen.Wait(700)
+	loadAnimDict(animDict2)
+	TaskPlayAnim(PlayerPedId(-1), animDict2, anim3, 8.0, 1.0, -1, 49, 0, 0, 0, 0)
+	Wait(1500)
+	ClearPedTasks(GetPlayerPed(-1))
 	DisplayText(text)
 end)
 TriggerEvent("chat:addSuggestion", "/roll", "Roll dice", {
